@@ -342,6 +342,7 @@ form input{
 }
 .snak-container{
     top: 100px;
+    left: 0;
 }
 .large-bee-container{
     top: 50px;

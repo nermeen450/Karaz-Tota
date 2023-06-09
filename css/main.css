@@ -25,7 +25,6 @@ a{
     text-align: center;
     color: var(--aqua-color);
     position: relative;
-
 }
 .small-heading{
     font-size: 24px;
@@ -44,6 +43,20 @@ a{
     left: 50%;
     bottom: -40px;
     transform: translateX(-50%);
+}
+@media (max-width:550px) {
+    .section-heading{
+        font-size: 32px;
+    }
+    .section-heading::after{
+        height: 8px;
+        width: 83px;
+        border-radius: 50px;
+        bottom: -20px;
+    }
+    .small-heading{
+        font-size: 20px;
+    }
 }
 section:not(.hero-section){
     padding-top: 50px;
@@ -192,14 +205,23 @@ color: var(--text-alt-color);
     padding: 30px 0 20px;
     text-align: center;
 }
-.crd .crd-heading{
+.crd{
+    background-color: var(--gray-color);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.crd-heading{
     font-size: 54px;
     font-weight: 700;
     line-height: 35px;
-    color: var(--text-color);
+    letter-spacing: 0em;
+    text-align: center;
     margin-bottom: 40px;
 }
-.card-slider .crd .slider-bullets span{
+.carousel > div.carousel-indicators{
+    margin-bottom: -35px;
+}
+.carousel > div.carousel-indicators > button{
     width: 12.8px;
     height: 12.8px;
     border-radius: 50%;
@@ -207,7 +229,7 @@ color: var(--text-alt-color);
     display: inline-block;
     cursor: pointer;
 }
-.card-slider .crd .slider-bullets span.active{
+.carousel > div.carousel-indicators > button.active{
     background-color: rgba(236, 108, 81, 1);
 }
 /*PRICES*/
@@ -353,8 +375,8 @@ form input{
     left: 25%;
 }
 .sunflower-container-activ{
-    right: 10%;
-    top: 70px;
+    top: -26px;
+    left: 100px;
 }
 /*VIDEOS*/
 .opinion-container {
@@ -378,14 +400,208 @@ form input{
     line-height: 35px;
     margin-top: 30px;
 }
-/* MEDIA QUERIES */
-@media screen and (max-width:900px) {
-    .clients-opinion .box{
-        width: calc(100% / 2);
+/* MEDIA QUERIES               RESPONSIVE                         */
+@media (min-width:1281px) {
+    .sunflower-container-activ{
+        right: 10%;
+        top: 70px;
+    }
+}
+@media screen and (max-width:1281px) {
+    .bee-container{
+        top: -20px;
+    }
+    .activites{
+        min-height: 180vh;
+        margin-bottom: 40px;
+    }
+    .activites {
+        margin-top: 50px;
+        background: url(../img/v-gray.svg), url(../img/v-red.svg),url(../img/v-yell.svg);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: cover, contain, cover;
+        background-position-y: top, bottom, top;
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+        height: 100%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .hero-section{
+        min-height: 100vh;
+    }
+    .activites {
+        margin-top: 50px;
+        background: url(../img/v-gray.svg), url(../img/v-red.svg),url(../img/v-yell.svg);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: cover, contain, cover;
+        background-position-y: top, bottom, top;
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+        height: 100%;
+    }
+    .subscribe{
+        background-size: cover;
+    }
+}
+@media (min-width:768px) and (max-width:1200px) {
+    .hero-section{
+        background-position: left -180px top,left -180px top, right top 20px;
+    }
+    .hero-text{
+        margin: auto;
+        margin-top: 50vh;
+    }
+    .sunflower-container{
+        left: 625px;
+        margin-top: 100px;
     }
 }
 @media screen and (max-width:550px) {
+    .navbar-img{
+        height: 55px;
+         width: 135px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .hero-section{
+        background: url(../img/girl-hero.svg), url(../img/yell-hero.svg), url(../img/res-fish-hero.svg);
+        background-position: top left, top 30px left -20px, bottom;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .hero-section .butterfly-container{
+        left: 17%;
+        top: 30%;
+        width: 77px;
+        height: 77px;
+    }
+    .sunflower-container{
+        width: 96px;
+        height: 91px;
+        top: 200px;
+        right: 0;
+    }
+    .hero-text{
+        margin: auto;
+        margin-top: 66vh;
+        max-width: 80%;
+    }
+    .hero-text p{
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: -0.055em;
+    }
+    .hero-text a{
+        border-radius: 10px;
+        padding: 17px 50px;
+        display: block;
+        margin: auto;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 37px;
+        letter-spacing: 0em;
+    }
+    .prices .small-heading{
+        width: 80%;
+    }
+    .prices .num{
+        font-size: 40px;
+        line-height: 35px;
+        margin: 0;
+    }
+    .prices .price-card{
+        padding: 15px;
+        gap: 10px;
+    }
+    .box-details{
+        line-height: 27px;
+        font-size: 14px;
+    }
+    .box-details span{
+        font-size: 18px;
+    }
+    .price-box .box-img{
+        margin-left: 15px;
+        width: 40px;
+    }
+    .prices .price-option{
+        padding: 30px;
+        height: 260px;
+    }
+    .prices .price-option span{
+        font-size: 25px;
+    }
+    .prices .price-option p {
+        font-size: 14px;
+    }
+    section.clients-opinion {
+        padding-top: 60px;
+    }
     .clients-opinion .box{
         width: 100%;
     }
-}
+    .subscribe{
+        color: var(--light-color);
+        background: url(../img/sub-small-bg.svg);
+        background-size: cover;
+        padding-bottom: 50px;
+        background-repeat: no-repeat;
+    }
+    .subscribe .subscribe-head {
+        font-size: 28px;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sunflower-container-activ {
+       right: 250px;
+       width: 95px;
+       top: 10px;
+    }
+    .activites {
+        margin-top: 50px;
+        background: url(../img/v-gray.svg), url(../img/v-red.svg),url(../img/v-yell.svg);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: cover, contain, contain;
+        background-position-y: top, bottom, top;
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+        height: 100%;
+    }
+    .activate-box{
+        margin-bottom: 20px;
+    }
+    .activate-box .activity-details .act-head {
+        font-size: 25px;
+    }
+    .activate-box p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    section.footer{
+        max-height: 135px;
+        padding-top: 30px;
+    }
+    .footer p{
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .tele-container{
+        width: 24px;
+    }
+    .twitter-container{
+        width: 21px;
+    }
+    .facebook-container{
+        width: 11px;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+    }

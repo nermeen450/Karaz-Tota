@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>كراز و توتا</title>
 </head>
 <body>
@@ -51,31 +51,32 @@
             <p>تجربة تربوية وتعليمية في بيئة آمنة ومريحة لطفلك، مع مجموعة من المتخصصات في رياض الأطفال.</p>
             <a href="#">آحجزي الان استضافه مجانيه</a>
         </div>
-        <div class="bee-container position-absolute">
-            <img src="img/bee.svg" alt="bee">
+        <div class="bee-container d-none d-lg-block position-absolute">
+            <img class="img-fluid" src="img/bee.svg" alt="bee">
         </div>
         <div class="butterfly-container position-absolute">
-            <img src="img/butterfly.svg" alt="butterfly">
+            <img class="img-fluid" src="img/butterfly.svg" alt="butterfly">
         </div>
-        <div class="white-dots position-absolute">
-            <img src="img/white-dots.svg" alt="white-dots">
+        <div class="white-dots d-none d-lg-block position-absolute">
+            <img class="img-fluid" src="img/white-dots.svg" alt="white-dots">
         </div>
         <div class="sunflower-container position-absolute">
             <img class="img-fluid" src="img/sunflower.svg" alt="sunflower">
         </div>
     </section>
+   <!--
     <section class="clients-opinion position-relative">
         <div class="section-heading">آراء العملاء</div>
-        <div class="client-waves-container position-absolute">
+        <div class="client-waves-container d-none d-lg-block position-absolute">
             <img src="img/clients-waves.svg" alt="clients-waves">
         </div>
-        <div class="butterfly-container position-absolute">
+        <div class="butterfly-container d-none d-lg-block position-absolute">
             <img src="img/butterfly.svg" alt="butterfly">
         </div>
-        <div class="small-butterfly-container position-absolute">
+        <div class="small-butterfly-container d-none d-lg-block position-absolute">
             <img src="img/small-butterfly.svg" alt="butterfly">
         </div>
-        <div class="wrapper py-5 my-5 position-relative">
+        <div class="wrapper py-5 my-1 my-lg-5 position-relative">
             <a class="nxt-btn d-block position-absolute"><i class="fa-solid fa-angle-right"></i></a>
             <div class="opinion-container">
                 <div class="box">
@@ -193,54 +194,79 @@
             <img class="img-fluid" src="img/vedio.svg" alt="video">
         </div>
     </section>
+   -->
     <section class="branches">
         <div class="section-heading">الفروع</div>
         <div class="small-heading">اختر الفرع الأقرب</div>
         <div class="container my-5">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card-slider">
-                        <div class="crd">
-                            <div class="crd-heading">التخصصي</div>
-                            <div class="img-cont">
-                                <img class="img-fluid" src="img/takhasosi.svg" alt="takhasosi">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="crd">
+                        <div class="crd-heading">التخصصي</div>
+                        <div id="carouselExampleDark1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="slider-bullets mt-3">
-                                <span></span>
-                                <span class="active"></span>
-                                <span></span>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/takhasosi.svg" class="d-block w-100" alt="takhasosi">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/hayat-mol.svg" class="d-block w-100" alt="hayat-mol">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/khares.svg" class="d-block w-100" alt="khares">
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card-slider">
-                        <div class="crd">
-                            <div class="crd-heading">خريص</div>
-                            <div class="img-cont">
-                                <img class="img-fluid" src="img/khares.svg" alt="khares">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="crd">
+                        <div class="crd-heading">خريص</div>
+                        <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="slider-bullets mt-3">
-                                <span></span>
-                                <span class="active"></span>
-                                <span></span>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/khares.svg" class="d-block w-100" alt="takhasosi">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/hayat-mol.svg" class="d-block w-100" alt="hayat-mol">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/takhasosi.svg" class="d-block w-100" alt="khares">
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card-slider">
-                        <div class="crd">
-                            <div class="crd-heading">حياة مول</div>
-                            <div class="img-cont">
-                                <img class="img-fluid" src="img/hayat-mol.svg" alt="hayat-mol">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="crd">
+                        <div class="crd-heading">حياة مول</div>
+                        <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="slider-bullets mt-3">
-                                <span></span>
-                                <span class="active"></span>
-                                <span></span>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/hayat-mol.svg" class="d-block w-100" alt="takhasosi">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/takhasosi.svg" class="d-block w-100" alt="hayat-mol">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/khares.svg" class="d-block w-100" alt="khares">
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -252,36 +278,36 @@
             استفيد من أسعار باقات ال 3 أشهر وال 6 أشهر في فرعي خريص والتخصصي ومميزاتها:
             التقسيط: يمكنك تقسيط سعر الباقة على دفعتين أو ثلاثة حسب نوع الباقة.
         </div>
-        <div class="price-waves position-absolute">
+        <div class="price-waves d-none d-lg-block position-absolute">
             <img src="img/price-waves.svg" alt="price-waves">
         </div>
-        <div class="bee-container-price position-absolute">
+        <div class="bee-container-price d-none d-lg-block position-absolute">
             <img src="img/bee.svg" alt="bee">
         </div>
         <div class="container my-5">
             <div class="row">
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3 mb-3">
                     <div class="price-card yell d-flex flex-column align-items-center justify-content-center">
                         <span>ساعة</span>
                         <div class="num">57.5</div>
                         <span>ريال</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3 mb-3">
                     <div class="price-card yell-good d-flex flex-column align-items-center justify-content-center">
                         <span>يوم</span>
                         <div class="num">345</div>
                         <span>ريال</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3 mb-3">
                     <div class="price-card yell-perfect d-flex flex-column align-items-center justify-content-center">
                         <span>اسبوع</span>
                         <div class="num">1150</div>
                         <span>ريال</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3 mb-3">
                     <div class="price-card aqua d-flex flex-column align-items-center justify-content-center">
                         <span>شهر</span>
                         <div class="num">1725</div>
@@ -289,31 +315,31 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-5 px-5">
-                <div class="col-12 col-lg-4">
+            <div class="row py-5">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="price-box d-flex align-items-center">
                         <div class="box-img">
-                            <img src="img/free.svg" alt="free">
+                            <img class="img-fluid" src="img/free.svg" alt="free">
                         </div>
                         <div class="box-details"><span>أيام مجانية : </span><br>
                             احصل على ٣ أيام أو أسبوع مجاني حسب نوع الباقة.
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="price-box d-flex align-items-center">
                         <div class="box-img">
-                            <img src="img/discount.svg" alt="discount">
+                            <img class="img-fluid" src="img/discount.svg" alt="discount">
                         </div>
                         <div class="box-details"><span>خصم عند تجديد الباقة :</span><br>
                             جدد باقة اشتراكك واحصل على خصم ٥٪ عند التجديد.
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="price-box d-flex align-items-center">
                         <div class="box-img">
-                            <img src="img/solidate.svg" alt="solidate">
+                            <img class="img-fluid" src="img/solidate.svg" alt="solidate">
                         </div>
                         <div class="box-details"><span>إمكانية تجميد الاشتراك:</span><br>
                             إذا تعرض طفلك لظروف تمنعه من المجيء يمكنك تجميد اشتراكه.
@@ -322,14 +348,14 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6 mb-3">
                     <div class="price-option aqua d-flex flex-column align-items-center justify-content-center">
                         <span>خدمة الأفتر سكول</span>
                         <p>ما بين عودته من المدرسة وعودتك من العمل، نستضيف طفلك على الرحب والسعة.
                             تبدأ استضافة ما بعد المدرسة من الساعة حتى الساعة</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6 mb-3">
                     <div class="price-option red d-flex flex-column align-items-center justify-content-center">
                         <span>دعم قرة</span>
                         <p>  لأنك فرد ناشط وعامل في المجتمع، تتحمل المملكة العربية السعودية عنك جزءًا من تكاليف حضانة طفلك، لتساعدك في تأدية
@@ -343,7 +369,7 @@
     <section class="subscribe position-relative">
         <div class="subscribe-head text-center">اشترك الآن واحصل على استضافة مجانية لمدة يوم</div>
         <div class="container">
-            <form class="row mx-5 px-5 g-3 needs-validation" novalidate>
+            <form class="row mx-5 px-1 px-lg-5 g-3 needs-validation" novalidate>
                 <div class="col-md-5">
                   <label for="validationCustom01" class="form-label">اسم الطفل</label>
                   <input type="text" class="form-control" id="validationCustom01"required>
@@ -389,10 +415,12 @@
         </div>-->
     </section>
     <section class="pictures">
-        <div class="section-heading">صور أطفالنا</div>
-        <div class="small-heading">من شهر إلى سنة:<br>
-            نحيط أطفالكم من سن شهر حتى سنة بالرعاية والاهتمام، ونساعد في تطوير مهاراتهم الحركية والإدراكية.</div>
-        <div class="pic-slider"></div>        
+        <div class="container">
+            <div class="section-heading">صور أطفالنا</div>
+            <div class="small-heading">من شهر إلى سنة:<br>
+                نحيط أطفالكم من سن شهر حتى سنة بالرعاية والاهتمام، ونساعد في تطوير مهاراتهم الحركية والإدراكية.</div>
+            <div class="pic-slider"></div>   
+        </div>     
     </section>
     <div class="section activites position-relative">
         <div class="section-heading mb-5">الأنشطة</div>
@@ -512,20 +540,20 @@
                 </div>
             </div>
         </div>
-        <div class="snak-container position-absolute">
+        <div class="snak-container d-none d-xl-block position-absolute">
             <img src="img/snake.svg" alt="snake">
         </div>
-        <div class="large-bee-container position-absolute">
+        <div class="large-bee-container d-none d-xl-block position-absolute">
             <img src="img/bee.svg" alt="bee">
         </div>
-        <div class="small-bee-container position-absolute">
+        <div class="small-bee-container d-none d-xl-block position-absolute">
             <img src="img/small-bee.svg" alt="small-bee">
         </div>
         <div class="sunflower-container-activ position-absolute">
-            <img src="img/small-sunflower.svg" alt="sunflower">
+            <img class="img-fluid" src="img/small-sunflower.svg" alt="sunflower">
         </div>
     </div>
-    <section class="videos">
+    <!--<section class="videos">
         <div class="section-heading">فيديوهات</div>
         <div class="wrapper py-5 my-5 position-relative">
             <a class="nxt-btn d-block position-absolute"><i class="fa-solid fa-angle-right"></i></a>
@@ -562,17 +590,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <section class="footer">
         <div class="socials d-flex align-items-center justify-content-center">
             <div class="tele-container">
-                <img src="img/tele.svg" alt="">
+                <img class="img-fluid" src="img/tele.svg" alt="">
             </div>
             <div class="twitter-container">
-                <img src="img/twiter.svg" alt="">
+                <img class="img-fluid" src="img/twiter.svg" alt="">
             </div>
             <div class="facebook-container">
-                <img src="img/facebook (1).svg" alt="">
+                <img class="img-fluid" src="img/facebook (1).svg" alt="">
             </div>
         </div>
         <p>للاتصال و التواصل</p>

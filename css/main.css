@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@700&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+:root{
+    --text-color:rgba(64, 64, 64, 1);
+    --text-alt-color:rgba(15, 20, 25, 1);
+    --red-color:rgba(230, 100, 71, 1);
+    --aqua-color:rgba(0, 170, 149, 1);
+    --light-color:rgba(255, 255, 255, 1);
+    --border-color:rgba(207, 207, 207, 1);
+    --gray-color:rgba(248, 248, 248, 1);
+    --red-alt-color:rgba(236, 108, 81, 1);
+}
+a{
+    text-decoration: none;
+}
+/*GLOBAL CLASSES */
+.section-heading{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--aqua-color);
+    position: relative;
+
+}
+.small-heading{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+.section-heading::after{
+    position: absolute;
+    content: " ";
+    background-color: var(--border-color);
+    height: 13px;
+    width: 130px;
+    border-radius: 50px;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+}
+section:not(.hero-section){
+    padding-top: 50px;
+}
+section.clients-opinion{
+    padding-top: 150px;
+}
+/* NAVBAR */
+.navbar-img{
+    height: 86px;
+    width: 209px;
+    margin-top: 20px;
+}
+.nav-item{
+    padding: 0 5px;
+}
+.nav-link{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: var(--text-color);
+}
+/* HERO SECTION */
+.hero-section{
+    background-image: url(../img/Mask\ group.svg),url(../img/Group\ 7.svg), url(../img/gray-bg.svg);
+    background-repeat: no-repeat;
+    background-position:left -180px bottom ,left -180px bottom, right bottom 20px;
+    background-size: 850px 500px,870px 500px, 1100px 500px;
+    height: 80vh;
+}
+.bee-container{
+    left: 140px;
+    top: -70px;
+}
+.hero-section .butterfly-container{
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+}
+.sunflower-container{
+    left: 430px;
+    margin-top: 190px;
+    width: 170px;
+    height: 170px;
+}
+.white-dots{
+    top: -42px;
+    right: -130px;
+}
+.hero-text{
+    max-width: 450px;
+    margin-right: 70px;
+}
+.hero-text p{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 62px;
+    letter-spacing: -0.055em;
+}
+.hero-text a{
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: var(--red-color);
+    color: var(--light-color);
+    border-radius: 15px;
+}
+/* CLIENTS-OPINIONS */
+.client-waves-container{
+    left: 0;
+    top: 120px;
+}
+.clients-opinion .butterfly-container{
+    right: 200px;
+    top: 0;
+}
+.clients-opinion .small-butterfly-container{
+    right: 70px;
+    top: -50px;
+}
+.wrapper{
+    max-width: 1118px;
+    margin: auto;
+}
+.wrapper a{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrapper a svg{
+    color: var(--aqua-color)!important;
+    cursor: pointer;
+    font-size: 16px;
+}
+.wrapper a.nxt-btn{
+    right: -25px;
+}
+.wrapper a.prev-btn{
+    left: -20px;
+}
+.wrapper .opinion-container{
+    white-space: nowrap;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+.clients-opinion .box{
+    border-radius: 12px;
+    padding: 30px 16px;
+    background-color: var(--gray-color);
+    width: calc(100% / 3);
+    margin-right: 14px;
+}
+.client-info{
+    line-height: 19px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.person .name{
+font-weight: 700;
+color: var(--text-alt-color);
+}
+.person .mail{
+    color: rgba(83, 100, 113, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.box p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -1px;
+    color: var(--text-color);
+}
+.video-container{
+    max-width: 70%;
+    margin: auto;
+}
+/* BRANCHES */
+
+.branches .card-slider{
+    background-color: var(--gray-color);
+    padding: 30px 0 20px;
+    text-align: center;
+}
+.crd .crd-heading{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 35px;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+.card-slider .crd .slider-bullets span{
+    width: 12.8px;
+    height: 12.8px;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 1);
+    display: inline-block;
+    cursor: pointer;
+}
+.card-slider .crd .slider-bullets span.active{
+    background-color: rgba(236, 108, 81, 1);
+}
+/*PRICES*/
+.prices .price-card.yell{
+    background: url(../img/yell-card.svg);
+    opacity: 0.6;
+}
+.prices .price-card.yell-good{
+    background: url(../img/yell-card.svg);
+    opacity: 0.8;
+}
+.prices .price-card.yell-perfect{
+    background: url(../img/yell-card.svg);
+}
+.prices .price-card.aqua{
+    background: url(../img/aqua-card.svg);
+}
+.prices .small-heading{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.prices .price-card{
+    color: var(--light-color);
+    padding: 30px;
+}
+.price-card span{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.price-card .num{
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 50px;
+}
+.price-box .box-img{
+    margin-left: 25px;
+}
+.price-box .box-details{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 0em;
+}
+.price-box .box-details span{
+    font-size: 25px;
+    color: var(--aqua-color);
+}
+.prices .price-option{
+    padding: 0 50px;
+    height: 336px;
+    color: var(--light-color);
+    border-radius: 12px;
+    font-weight: 900;
+    line-height: 35px;
+}
+.prices .price-option.aqua{
+    background-color: var(--aqua-color);
+}
+.prices .price-option.red{
+    background-color: var(--red-color);
+}
+.prices .price-option span{
+    font-size: 36px;
+}
+.prices .price-option p{
+    font-size: 24px;
+}
+.price-waves{
+    top: 36%;
+    right: -90px;
+}
+.bee-container-price{
+    left: 200px;
+    top: 60px;
+}
+/*SUBSCRIBE*/
+.subscribe{
+    color: var(--light-color);
+    background: url(../img/subscribe-bg.svg);
+    background-size: contain;
+    padding-bottom: 35px;
+}
+.subscribe .subscribe-head{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 70px;
+}
+form input{
+    background-color: rgba(209, 209, 209, 1);
+}
+/*PICTURES*/
+/*ACTIVITIES*/
+.activites{
+    margin-top: 50px;
+    background: url(../img/big-bg.svg), url(../img/red-bg.svg),url(../img/yell-bg.svg);
+    background-position: left -300px top, left 112% top 10%,right -1000px top 10px;
+    padding-top: 150px;
+    min-height: 225vh;
+    background-size: 150% 219vh;
+    background-repeat: no-repeat;
+}
+.activate-box{
+    height: 199px;
+    margin-bottom: 30px;
+}
+.activate-box .activity-img{
+    background:url(../img/w-av-bg.svg);
+    height: 100%;
+    width: 280px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activate-box .activity-details .act-head{
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 0em;
+    color: var(--aqua-color);
+}
+.activate-box .activity-details p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.activate-box:last-of-type p{
+    font-size: 22px;
+}
+.snak-container{
+    top: 100px;
+}
+.large-bee-container{
+    top: 50px;
+    left: 30%;
+}
+.small-bee-container{
+    top: 130px;
+    left: 25%;
+}
+.sunflower-container-activ{
+    right: 10%;
+    top: 70px;
+}
+/*VIDEOS*/
+.opinion-container {
+    white-space: nowrap;
+}
+.opinion-container .img{
+    width: calc(100%) / 3;
+}
+.footer{
+    background: url(../img/footer-bg.svg);
+    padding-bottom: 40px;
+    color: var(--light-color);
+}
+.footer .socials{
+    gap: 40px;
+}
+.footer p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 30px;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width:900px) {
+    .clients-opinion .box{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width:550px) {
+    .clients-opinion .box{
+        width: 100%;
+    }
+}

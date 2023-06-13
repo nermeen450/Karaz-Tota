@@ -31,7 +31,8 @@ a{
     font-weight: 900;
     line-height: 35px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 .section-heading::after{
     position: absolute;
@@ -56,11 +57,11 @@ a{
     }
     .small-heading{
         font-size: 20px;
+        padding: 20px;
     }
 }
 section{
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 section.clients-opinion{
     padding-top: 150px;
@@ -110,6 +111,7 @@ section.clients-opinion{
 .hero-text{
     max-width: 450px;
     margin-right: 70px;
+    z-index: 10;
 }
 .hero-text p{
     font-size: 36px;
@@ -128,18 +130,28 @@ section.clients-opinion{
     color: var(--light-color);
     border-radius: 15px;
 }
+.res-hero-waves,
+.hero-waves{
+    bottom: 0;
+}
 /* CLIENTS-OPINIONS */
+.clients-opinion{
+    padding-top: 100px;
+}
+.clients-waves{
+    left: 0;
+}
 .client-waves-container{
     left: 0;
     top: 120px;
 }
-.clients-opinion .butterfly-container{
+.clients-opinion .clients-butterfly{
     right: 200px;
-    top: 0;
+    top: 15px;
 }
-.clients-opinion .small-butterfly-container{
-    right: 70px;
-    top: -50px;
+.clients-opinion .clients-sm-butterfly{
+    right: 90px;
+    top: 2px;
 }
 .clients-opinion{
     overflow: hidden;
@@ -248,9 +260,6 @@ section.clients-opinion{
     background-color: rgba(236, 108, 81, 1);
 }
 /*PRICES*/
-.prices{
-    margin-top: 150px;
-}
 .prices .price-card.yell{
     background: url(../img/yell-card.svg);
     opacity: 0.6;
@@ -320,8 +329,8 @@ section.clients-opinion{
     font-size: 24px;
 }
 .price-waves{
-    top: 36%;
-    right: -90px;
+    top: 30%;
+    right: -40px;
 }
 .bee-container-price{
     left: 200px;
@@ -332,16 +341,28 @@ section.clients-opinion{
     color: var(--light-color);
     background: url(../img/subscribe-bg.svg);
     background-size: contain;
-    padding-bottom: 35px;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    overflow: hidden;
 }
 .subscribe .subscribe-head{
     font-size: 36px;
     font-weight: 700;
     line-height: 35px;
     margin-bottom: 70px;
+    z-index: 10;
+}
+form{
+    z-index: 10;
 }
 form input{
     background-color: rgba(209, 209, 209, 1);
+}
+.bg-sub{
+    left: -200px;
+    min-width: 500px;
+    width: 500px;
+    top: 20%;
 }
 /*PICTURES & VIDEOS*/
 .pic-wrapper, .video-wrapper{
@@ -411,18 +432,21 @@ form input{
     background: url(../img/big-bg.svg), url(../img/red-bg.svg),url(../img/yell-bg.svg);
     background-position: left -300px top, left 112% top 10%,right -1000px top 10px;
     padding-top: 150px;
-    min-height: 225vh;
-    background-size: 150% 219vh;
+    min-height: 228vh;
+    background-size: 150% 100%;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
 }
 .activate-box{
     height: 199px;
     margin-bottom: 30px;
+    min-height: 199px;
 }
 .activate-box .activity-img{
     background:url(../img/w-av-bg.svg);
     height: 100%;
-    width: 280px;
+    width: 240px;
+    min-width: 240px;
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -431,31 +455,33 @@ form input{
 .activate-box .activity-details .act-head{
     font-size: 36px;
     font-weight: 900;
-    letter-spacing: 0em;
     color: var(--aqua-color);
 }
 .activate-box .activity-details p{
     font-size: 24px;
     font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: var(--text-color);
 }
 .activate-box:last-of-type p{
     font-size: 22px;
 }
 .snak-container{
-    top: 100px;
+    top: 60px;
     left: 0;
 }
 .large-bee-container{
-    top: 50px;
+    top: 30px;
     left: 30%;
 }
 .small-bee-container{
-    top: 130px;
+    top: 95px;
     left: 25%;
 }
 .sunflower-container-activ{
     top: -26px;
-    left: 100px;
+    right: 100px;
 }
 /*VIDEOS*/
 .opinion-container {
@@ -482,8 +508,14 @@ form input{
 /* MEDIA QUERIES               RESPONSIVE                         */
 @media (min-width:1281px) {
     .sunflower-container-activ{
-        right: 10%;
-        top: 70px;
+        right: 19%;
+        top: 33px;
+    }
+    .activites{
+        min-height: 163px;
+    }
+    .activites .activities-page{
+        padding-top: 50px;
     }
 }
 @media screen and (max-width:1281px) {
@@ -504,6 +536,9 @@ form input{
         background-repeat: no-repeat;
         margin-bottom: 60px;
         height: 100%;
+    }
+    .snak-container {
+        top: 20px;
     }
 }
 @media screen and (max-width:1200px) {
@@ -538,18 +573,48 @@ form input{
     .pic-wrapper .pic-content .img-slide:last-of-type, .video-wrapper .video-content .img-slide:last-of-type {
         margin-left: 0px;
     }
+    .activites{
+        min-height: 1370px;
+    }
+    .activate-box .activity-details p {
+        font-size: 20px;
+    }
+    .activate-box:last-child .activity-details p {
+        font-size: 14px;
+    }
+    .activate-box .activity-img{
+        width: 200px;
+        min-width: 200px;
+    }
 }
 @media (min-width:768px) and (max-width:1200px) {
+    .navbar-img{
+        width: 195px;
+        height: 80px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
     .hero-section{
         background-position: left -180px top,left -180px top, right top 20px;
     }
     .hero-text{
-        margin: auto;
-        margin-top: 50vh;
+        margin-top: -145px;
     }
-    .sunflower-container{
-        left: 625px;
-        margin-top: 100px;
+    .hero-text a {
+        padding: 15px 25px;
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .sunflower-container {
+        left: 435px;
+        margin-top: 150px;
+    }
+    section.clients-opinion {
+        padding-top: 20px;
     }
     .slide-container{
         max-width: 700px;
@@ -602,6 +667,9 @@ form input{
         color: var(--text-color);
         margin-bottom: 0;
     }
+    section.videos, section.pictures{
+        padding-bottom: 100px;
+    }
     .pic-wrapper, .video-wrapper{
         max-width: 620px;
     }
@@ -613,7 +681,30 @@ form input{
         padding: 1px;
     }
 }
+@media (min-width:768px) and (max-width:992px) {
+    .hero-section{
+        min-height: 60vh;
+    }
+    .hero-text{
+        margin-top: 315px;
+    }
+    .sunflower-container{
+        left: 415px;
+        margin-top: -30px;
+    }
+    .branches .crd{
+        width: 100%;
+    }
+    .activate-box:last-child .activity-details p {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width:550px) {
+    .small-heading,
+    .prices .small-heading{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
     .navbar-img{
         height: 55px;
          width: 135px;
@@ -652,7 +743,7 @@ form input{
     }
     .hero-text a{
         border-radius: 10px;
-        padding: 17px 50px;
+        padding: 17px 47px;
         display: block;
         margin: auto;
         font-size: 26px;
@@ -694,16 +785,21 @@ form input{
         font-size: 14px;
     }
     section.clients-opinion {
-        padding-top: 60px;
+        padding-top: 140px;
+    }
+    .clients-waves{
+        min-width: 120px;
+        width: 120px;
+        left: -25px;
     }
     .slide-container{
         max-width: 700px;
         width: 100%;
         padding: 20px 0;
-        margin: 90px auto;
+        margin: 40px auto;
     }
     .slide-content{
-        margin: 0 40px;
+        margin: 0 20px;
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
@@ -742,9 +838,9 @@ form input{
         margin-bottom: 20px;
     }
     .sunflower-container-activ {
-       right: 250px;
-       width: 95px;
-       top: 10px;
+        right: 75px;
+        width: 95px;
+        top: -25px;
     }
     .activites {
         margin-top: 50px;
@@ -759,12 +855,26 @@ form input{
     }
     .activate-box{
         margin-bottom: 20px;
+        height: 104px;
+        min-height: 104px;
     }
-    .activate-box .activity-details .act-head {
+    .activate-box .activity-img {
+        width: 118px;
+        min-width: 118px;
+        margin-left: 20px;
+    }
+    .activate-box .activity-img img{
+        width: 54px;
+    }
+    .activate-box .activity-details .act-head{
         font-size: 25px;
     }
-    .activate-box p {
+    .activate-box .activity-details p{
         font-size: 14px;
+        line-height: 20px;
+    }
+    .activate-box:last-child .activity-details p{
+        font-size: 12px;
         line-height: 20px;
     }
     .pic-wrapper, .video-wrapper{
@@ -796,5 +906,62 @@ form input{
     }
     .footer p{
         font-size: 13px;
+    }
+}
+@media (min-width:390px) and (max-width:500px) {
+    .hero-section{
+        min-height: 90vh;
+        height: 90vh;
+    }
+    .hero-text{
+        margin-top: 50vh;
+    }
+}
+@media (max-width:300px) {
+    .navbar-img {
+        width: 100px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    .hero-text p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .hero-text a {
+        padding: 10px 0px;
+        font-size: 14px;
+    }
+    .section-heading::after {
+        height: 5px;
+        bottom: -14px;
+    }
+    .section-heading{
+        font-size: 24px;
+    }
+    .slide-container {
+        margin: 40px auto;
+    }
+    .small-heading {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .prices .small-heading{
+        font-size: 16px;
+        padding: 10px 1px;
+        margin-top: 0;
+    }
+    .price-card span {
+        font-size: 25px;
+    }
+    .prices .num {
+        font-size: 35px;
+    }
+    .crd-heading{
+        font-size: 35px;
+    }
+    .sunflower-container-activ {
+        right: 182px;
     }
 }

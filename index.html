@@ -48,7 +48,7 @@
         </div>
     </nav>
     <section class="hero-section position-relative d-flex align-items-center">
-        <div class="hero-text text-center">
+        <div class="hero-text text-center position-relative">
             <p>تجربة تربوية وتعليمية في بيئة آمنة ومريحة لطفلك، مع مجموعة من المتخصصات في رياض الأطفال.</p>
             <a href="#">آحجزي الان استضافه مجانيه</a>
         </div>
@@ -64,8 +64,23 @@
         <div class="sunflower-container position-absolute">
             <img class="img-fluid" src="img/sunflower.svg" alt="sunflower">
         </div>
+        <div class="hero-waves d-none d-xl-block position-absolute">
+            <img class="img-fluid" src="img/waves.svg" alt="">
+        </div>
+        <div class="res-hero-waves d-block d-md-none position-absolute">
+            <img class="img-fluid" src="img/responsive-hero-waves.svg" alt="">
+        </div>
     </section>
     <section class="clients-opinion position-relative">
+        <div class="clients-waves position-absolute">
+            <img class="img-fluid" src="img/waves.svg" alt="">
+        </div>
+        <div class="clients-butterfly d-none d-xl-block position-absolute">
+            <img class="img-fluid" src="img/butterfly.svg" alt="">
+        </div>
+        <div class="clients-sm-butterfly d-none d-xl-block position-absolute">
+            <img class="img-fluid" src="img/small-butterfly.svg" alt="">
+        </div>
         <div class="section-heading">آراء العملاء</div>
         <div class="slide-container position-relative">
             <div class="slide-content">
@@ -192,9 +207,9 @@
     <section class="branches">
         <div class="section-heading">الفروع</div>
         <div class="small-heading">اختر الفرع الأقرب</div>
-        <div class="container my-5">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
                     <div class="crd">
                         <div class="crd-heading">التخصصي</div>
                         <div id="carouselExampleDark1" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -217,7 +232,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
                     <div class="crd">
                         <div class="crd-heading">خريص</div>
                         <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -240,7 +255,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
                     <div class="crd">
                         <div class="crd-heading">حياة مول</div>
                         <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -342,14 +357,14 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <div class="col-12 col-md-12 col-lg-6 mb-3">
                     <div class="price-option aqua d-flex flex-column align-items-center justify-content-center">
                         <span>خدمة الأفتر سكول</span>
                         <p>ما بين عودته من المدرسة وعودتك من العمل، نستضيف طفلك على الرحب والسعة.
                             تبدأ استضافة ما بعد المدرسة من الساعة حتى الساعة</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <div class="col-12 col-md-12 col-lg-6 mb-3">
                     <div class="price-option red d-flex flex-column align-items-center justify-content-center">
                         <span>دعم قرة</span>
                         <p>  لأنك فرد ناشط وعامل في المجتمع، تتحمل المملكة العربية السعودية عنك جزءًا من تكاليف حضانة طفلك، لتساعدك في تأدية
@@ -361,9 +376,9 @@
         </div>
     </section>
     <section class="subscribe position-relative">
-        <div class="subscribe-head text-center">اشترك الآن واحصل على استضافة مجانية لمدة يوم</div>
+        <div class="subscribe-head position-relative text-center">اشترك الآن واحصل على استضافة مجانية لمدة يوم</div>
         <div class="container">
-            <form class="row mx-5 px-1 px-lg-5 g-3 needs-validation" novalidate>
+            <form class="row position-relative mx-5 px-1 px-lg-5 g-3 needs-validation" novalidate>
                 <div class="col-md-5">
                   <label for="validationCustom01" class="form-label">اسم الطفل</label>
                   <input type="text" class="form-control" id="validationCustom01"required>
@@ -404,9 +419,9 @@
                 </div>
             </form>
         </div>
-        <!--<div class="subscribe white-dots position-absolute">
-            <img class="img-fluid" src="img/Layer_1.svg" alt="white-dots">
-        </div>-->
+        <div class="subscribe d-none d-block bg-sub position-absolute">
+            <img class="img-fluid" src="img/bg-sub (2).svg" alt="white-dots">
+        </div>
     </section>
     <section class="pictures">
         <div class="section-heading">صور أطفالنا</div>
@@ -452,12 +467,12 @@
     </section>
     <div class="section activites position-relative">
         <div class="section-heading mb-5">الأنشطة</div>
-        <div class="container">
+        <div class="activities-page container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/edraky (1).svg" alt="edraky">
+                        <div class="activity-img">
+                            <img class="img-fluid" src="img/edraky (1).svg" alt="edraky">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">النشاط الإدراكي:</div>
@@ -467,8 +482,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/harky (1).svg" alt="hark">
+                        <div class="activity-img">
+                            <img class="img-fluid" src="img/harky (1).svg" alt="hark">
                         </div>
                         <div class="activity-details">
                             <div class="act-head"> النشاط الحركي:</div>
@@ -478,8 +493,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/karekater (1).svg" alt="fan">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/karekater (1).svg" alt="fan">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">النشاط الفني:</div>
@@ -489,8 +504,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/story (1).svg" alt="hors">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/story (1).svg" alt="hors">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">القصة:</div>
@@ -501,7 +516,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
                         <div class="activity-img ">
-                            <img src="img/halqa (1).svg" alt="halqa">
+                            <img class="img-fluid" src="img/halqa (1).svg" alt="halqa">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">الحلقة:</div>
@@ -513,8 +528,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/quran (1).svg" alt="quran">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/quran (1).svg" alt="quran">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">القرآن:</div>
@@ -524,8 +539,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/english (1).svg" alt="english">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/english (1).svg" alt="english">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">اللغة الإنجليزية:</div>
@@ -535,8 +550,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/safe (1).svg" alt="english">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/safe (1).svg" alt="english">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">الأمان:</div>
@@ -546,8 +561,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/clean (1).svg" alt="clean">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/clean (1).svg" alt="clean">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">النظافة:</div>
@@ -557,8 +572,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="activate-box d-flex align-items-center">
-                        <div class="activity-img d-flex align-items-center justify-content-center">
-                            <img src="img/family (1).svg" alt="family">
+                        <div class="activity-img d-flex">
+                            <img class="img-fluid" src="img/family (1).svg" alt="family">
                         </div>
                         <div class="activity-details">
                             <div class="act-head">من شهر إلى سنة:</div>
